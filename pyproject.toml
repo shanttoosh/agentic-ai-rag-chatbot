@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ai-rag"
+version = "1.0.0"
+description = "RAG chatbot grounded strictly in the Agentic AI eBook (LangGraph, Pinecone, Claude, FastAPI)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+include = ["app*", "evaluation*", "scripts*"]
+
+[tool.setuptools.package-data]
+"app.prompts" = ["*.txt"]
+
+# --------------------------------------------------------------------------- ruff
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",  # pycodestyle
+    "F",       # pyflakes
+    "I",       # isort
+    "N",       # pep8-naming
+    "B",       # bugbear
+    "UP",      # pyupgrade
+    "SIM",     # simplify
+    "C4",      # comprehensions
+    "RET",     # return statements
+    "PTH",     # pathlib over os.path
+    "RUF",     # ruff-specific
+]
+ignore = ["RUF001", "RUF002", "RUF003"]  # allow typographic quotes/dashes copied from the eBook
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "evaluation", "scripts", "tests"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+# --------------------------------------------------------------------------- mypy
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["app", "evaluation", "scripts", "ui"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["pymupdf", "pymupdf.*"]
+ignore_missing_imports = true
+
+# ------------------------------------------------------------------------- pytest
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
+filterwarnings = ["ignore::DeprecationWarning:pymupdf.*"]

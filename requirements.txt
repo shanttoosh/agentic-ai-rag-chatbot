@@ -1,0 +1,15 @@
+# Runtime dependencies
+groq>=1.7,<2                 # LLM (default provider): gpt-oss via Groq
+anthropic>=1.9,<2            # LLM (alternative provider): Claude
+langgraph>=1.2,<2            # RAG workflow graph
+pinecone>=10.0,<11           # vector DB + hosted embeddings (Pinecone Inference)
+pymupdf>=1.28,<2             # PDF text extraction
+fastapi>=0.141,<1            # chat API
+uvicorn[standard]>=0.54,<1   # ASGI server
+pydantic>=2.13,<3
+pydantic-settings>=2.15,<3   # .env / environment configuration
+streamlit>=1.64,<2           # demo UI
+httpx>=0.28,<1               # UI -> API client
+
+# This project (app, evaluation and scripts packages), installed in editable mode.
+-e .
