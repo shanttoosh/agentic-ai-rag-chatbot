@@ -1,0 +1,39 @@
+# docker compose up --build                             -> API on :8000, UI on :8501
+# docker compose run --rm api python scripts/ingest.py  -> one-off ingestion
+services:
+  api:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data # downloaded PDF and processed chunks
+    restart: unless-stopped
+
+  ui:
+    build: .
+    command: >
+      streamlit run ui/streamlit_app.py
+      --server.address=0.0.0.0 --server.port=8501 --server.headless=true
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    # The image's HEALTHCHECK probes the API port; the UI checks Streamlit's own endpoint.
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health', timeout=3)"
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      start_interval: 5s
+      retries: 3
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
