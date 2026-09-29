@@ -1,0 +1,369 @@
+{
+  "summary": {
+    "total": 17,
+    "answerable_accuracy": 1.0,
+    "fallback_accuracy": 1.0,
+    "page_hit_rate": 1.0,
+    "mean_confidence_answered": 0.724,
+    "mean_latency_ms": 5693.9,
+    "suggested_threshold": 0.331
+  },
+  "results": [
+    {
+      "id": "a01",
+      "question": "What is Agentic AI?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "Agentic AI is an autonomous, goal‑driven form of artificial intelligence that goes beyond reactive tools. It learns and adapts to new situations, makes independent decisions, and proactively works toward business objectives (p. 9). Rather than merely processing inputs, it acts as a super‑intelligent collaborator—functioning as a coach, chef, coordinator, or project manager—suggesting improvements, drafting proposals, tracking trends, and even reaching out to partners without constant micromanagement (p. 8). It creates impact by anticipating needs, adjusting to disruptions, and aligning actions with real‑time goals (p. 11).",
+      "confidence": 0.794,
+      "top_score": 0.6189,
+      "retrieved_pages": [
+        8,
+        7,
+        9,
+        11,
+        53
+      ],
+      "cited_pages": [
+        8,
+        9,
+        11
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 6589
+    },
+    {
+      "id": "a02",
+      "question": "What are the defining characteristics of an AI agent?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "The eBook defines the following primary characteristics of an AI agent:\n- Autonomy: an autonomous, interactive, goal‑driven entity with its own state, behavior, decision‑making capabilities and the ability to self‑improve when performance falls short (p. 21).\n- Reactivity and Proactivity: can sense its environment and respond (reactive) and can take initiative toward its goals (proactive) (p. 21).\n- Beliefs, Desires, and Intentions (BDI): maintains beliefs about the world, desires as objectives, and intentions as plans of action (p. 21).\n- Social Ability & Communication: has a communication mechanism to interact with other agents or entities, enabling complex negotiation, coordination, and natural‑language exchange (p. 22).\n- Constitution: must follow regulations and policies, protect itself from compromise, and be trusted not to harm other agents (p. 22).\n- Memory: possesses long‑term memory of past interactions and short‑term memory of current context to support efficient task execution (p. 22).",
+      "confidence": 0.8,
+      "top_score": 0.6245,
+      "retrieved_pages": [
+        21,
+        22
+      ],
+      "cited_pages": [
+        21,
+        22
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 5741
+    },
+    {
+      "id": "a03",
+      "question": "How are AI agents different from LLMs?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "AI agents differ from LLMs in several key ways:\n- **Primary function**: Agents make decisions and take actions toward goals, showing autonomy and proactive behavior, while LLMs primarily understand and generate language (p. 10).\n- **Interactivity**: Agents operate continuously with minimal human input; LLMs respond reactively to prompts (p. 10).\n- **Decision‑making**: Agents have built‑in, context‑aware, goal‑driven decision‑making; LLMs lack inherent decision‑making capability (p. 10).\n- **Dependency**: Agents can function with little prompting and can integrate tools; LLMs need prompts to operate (p. 10).\n- **Autonomy & state**: Agents are autonomous, interactive, goal‑driven entities with their own state, behavior, and self‑improvement ability (p. 21). LLMs do not possess such autonomy (p. 9).",
+      "confidence": 0.701,
+      "top_score": 0.6016,
+      "retrieved_pages": [
+        10,
+        9,
+        21,
+        22
+      ],
+      "cited_pages": [
+        9,
+        10,
+        21
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 5093
+    },
+    {
+      "id": "a04",
+      "question": "How does an agentic AI system decide which action to take?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "An agentic AI first perceives its environment through sensors and converts raw data into insights (p. 19). It then applies reasoning to detect patterns and draw conclusions (p. 19). Guided by its defined goals, the system plans a path to achieve those objectives (p. 19). The action selected is the one that best aligns with the goal, using internal models (model‑based agents) or direct goal prioritization (goal‑based agents) (p. 23). Memory and continuous learning from past interactions further refine the choice, enabling more effective and adaptive decision‑making (p. 20).",
+      "confidence": 0.697,
+      "top_score": 0.5636,
+      "retrieved_pages": [
+        20,
+        23,
+        11,
+        19,
+        17
+      ],
+      "cited_pages": [
+        19,
+        20,
+        23
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 3624
+    },
+    {
+      "id": "a05",
+      "question": "What are the challenges of orchestrating multi-agent systems?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "The eBook lists several key challenges when orchestrating multi‑agent systems:\n- **Scalability** – Managing hundreds or thousands of agents requires robust infrastructure and algorithms that can dynamically add or remove agents without disrupting performance (p. 39).\n- **Reliability and fault tolerance** – The system must continue operating despite partial failures; a single agent’s failure must not jeopardize overall functionality (p. 39).\n- **Communication and coordination** – Ensuring seamless interaction among diverse agents is difficult due to differing functionalities, technologies, and standards; a uniform interaction protocol is often needed (p. 39).\n- **Interoperability issues** – Varying agent designs can cause compatibility problems that must be addressed (p. 39).\n- **Conflict management** – Autonomous agents may have overlapping goals or compete for resources, requiring automated mechanisms to resolve conflicts (p. 39).\n- **Agent selection** – When multiple suitable agents exist, the system must choose the most appropriate one based on context and efficiency (p. 39).\n- **Overall coordination failures** – Without effective orchestration, agents operate in silos, leading to high failure rates (70‑80%) and inefficiencies (p. 38).",
+      "confidence": 0.88,
+      "top_score": 0.6691,
+      "retrieved_pages": [
+        39,
+        37,
+        38,
+        41
+      ],
+      "cited_pages": [
+        38,
+        39
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 2923
+    },
+    {
+      "id": "a06",
+      "question": "How should an organization get started with implementing Agentic AI?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "To begin implementing Agentic AI, an organization should:\n- Set clear, business‑aligned goals and target high‑impact use cases such as predictive maintenance or personalization (p. 53).\n- Ensure data readiness and a robust, scalable infrastructure, investing in data quality and management practices (p. 53; p. 47).\n- Build cross‑functional teams that combine IT, operations, AI expertise, and domain knowledge (p. 53; p. 47).\n- Start with pilot projects or small‑scale experiments, using exhaustive validation and testing to uncover vulnerabilities (p. 46).\n- Track success with KPIs and continuously improve, establishing governance and performance metrics as the effort matures (p. 53; p. 52).",
+      "confidence": 0.934,
+      "top_score": 0.6917,
+      "retrieved_pages": [
+        53,
+        47,
+        46,
+        48,
+        52
+      ],
+      "cited_pages": [
+        46,
+        47,
+        52,
+        53
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 8189
+    },
+    {
+      "id": "a07",
+      "question": "What are the types of atomic agents?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "The eBook identifies three categories of atomic agents:\n- **Foundational Agents** – provide core, horizontal capabilities such as planning or verification (p. 25).\n- **Workflow Agents** – execute specific, high‑quality tasks with vertical expertise, often collaborating with foundational agents (p. 25).\n- **Utility Agents** – simple helper agents that connect to tools for basic, low‑complexity operations (p. 25).",
+      "confidence": 0.483,
+      "top_score": 0.5092,
+      "retrieved_pages": [
+        25,
+        24,
+        23
+      ],
+      "cited_pages": [
+        25
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 11823
+    },
+    {
+      "id": "a08",
+      "question": "What benefits did the retail company report after adopting Agentic AI?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "- Operational Efficiency: automated tasks cut manual work by 40% and lowered operational costs by 15% (p. 13).\n- Real‑time Decision‑making & Sales Optimization: AI analysis of sales data boosted sales by 20% (p. 13).\n- Improved Customer Service: 24/7 AI support raised customer satisfaction by 25% (p. 13).\n- Ultra‑Personalization: tailored shopping experiences increased conversion rates by 18% and enhanced loyalty (p. 13).\n- Optimized Resources: AI inventory predictions cut waste by 10% (p. 13).",
+      "confidence": 0.805,
+      "top_score": 0.6258,
+      "retrieved_pages": [
+        58,
+        12,
+        13,
+        56
+      ],
+      "cited_pages": [
+        13
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 7252
+    },
+    {
+      "id": "a09",
+      "question": "Why does an agent need long-term and short-term memory?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "An agent needs long‑term memory (LTM) to retain past interactions and successful strategies, which lets it reuse relevant prior plans and actions, dramatically cutting the computation required for new tasks and allowing it to store human demonstrations for faster progress (p. 22). Short‑term memory (STM) holds the current context—such as prompts and any information within the model’s context window—so the agent can address immediate concerns and respond appropriately in the moment (p. 22).",
+      "confidence": 0.365,
+      "top_score": 0.4972,
+      "retrieved_pages": [
+        22,
+        20,
+        40,
+        30
+      ],
+      "cited_pages": [
+        22
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 12721
+    },
+    {
+      "id": "a10",
+      "question": "Which communication mechanisms do agents in a multi-agent system use?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "Agents employ two primary communication mechanisms: • Point‑to‑Point Messaging – direct message exchanges between agents for targeted communication. • Publish‑Subscribe Models – asynchronous communication suited for large‑scale distributed systems. Both mechanisms depend on well‑defined protocols and languages that support communicative acts such as requests, assertions, and queries (p. 40).",
+      "confidence": 0.658,
+      "top_score": 0.5825,
+      "retrieved_pages": [
+        40,
+        31,
+        35,
+        22
+      ],
+      "cited_pages": [
+        40
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 10119
+    },
+    {
+      "id": "a11",
+      "question": "What are the core pillars of an Agentic AI system?",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "answer": "The core pillars of an Agentic AI system are Perception, Reasoning, Planning, Learning, Verification, and Execution (p. 19).",
+      "confidence": 0.849,
+      "top_score": 0.6621,
+      "retrieved_pages": [
+        19,
+        17,
+        20,
+        11
+      ],
+      "cited_pages": [
+        19
+      ],
+      "unsupported_claims": [],
+      "latency_ms": 9970
+    },
+    {
+      "id": "u01",
+      "question": "What is the capital of France?",
+      "answerable": false,
+      "status": "low_retrieval_score",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.0201124363,
+      "retrieved_pages": [
+        9,
+        19,
+        12
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 1761
+    },
+    {
+      "id": "u02",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "answerable": false,
+      "status": "low_retrieval_score",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.164536148,
+      "retrieved_pages": [
+        59,
+        28,
+        58,
+        55
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 802
+    },
+    {
+      "id": "u03",
+      "question": "How do I bake sourdough bread?",
+      "answerable": false,
+      "status": "low_retrieval_score",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.12750195,
+      "retrieved_pages": [
+        53,
+        47,
+        45,
+        8
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 759
+    },
+    {
+      "id": "u04",
+      "question": "How do I fine-tune Llama 3 with LoRA?",
+      "answerable": false,
+      "status": "low_retrieval_score",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.15700686,
+      "retrieved_pages": [
+        38,
+        57,
+        44,
+        55,
+        10
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 806
+    },
+    {
+      "id": "u05",
+      "question": "How much does Konverge AI charge for its services?",
+      "answerable": false,
+      "status": "not_in_context",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.407,
+      "retrieved_pages": [
+        28,
+        2,
+        59,
+        4,
+        46
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 6820
+    },
+    {
+      "id": "u06",
+      "question": "Explain how the transformer self-attention mechanism works.",
+      "answerable": false,
+      "status": "low_retrieval_score",
+      "passed": true,
+      "answer": "I couldn't find enough information about this in the provided Agentic AI eBook.",
+      "confidence": 0.0,
+      "top_score": 0.184569,
+      "retrieved_pages": [
+        19,
+        11,
+        26
+      ],
+      "cited_pages": [],
+      "unsupported_claims": [],
+      "latency_ms": 1805
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Answerable questions (with the eBook pages that contain the answer, verified against the PDF text) and unanswerable questions that must return the safe fallback. The 'near-miss' cases are AI-related or mention entities from the book, so they can pass the retrieval threshold and must be stopped by the generator or the validator.",
+  "cases": [
+    {"id": "a01", "question": "What is Agentic AI?", "answerable": true, "expected_pages": [8, 18], "sample": true},
+    {"id": "a02", "question": "What are the defining characteristics of an AI agent?", "answerable": true, "expected_pages": [21, 22], "sample": true},
+    {"id": "a03", "question": "How are AI agents different from LLMs?", "answerable": true, "expected_pages": [10], "sample": true},
+    {"id": "a04", "question": "How does an agentic AI system decide which action to take?", "answerable": true, "expected_pages": [19, 32], "sample": true},
+    {"id": "a05", "question": "What are the challenges of orchestrating multi-agent systems?", "answerable": true, "expected_pages": [36, 39], "sample": true},
+    {"id": "a06", "question": "How should an organization get started with implementing Agentic AI?", "answerable": true, "expected_pages": [47, 53], "sample": true},
+    {"id": "a07", "question": "What are the types of atomic agents?", "answerable": true, "expected_pages": [25]},
+    {"id": "a08", "question": "What benefits did the retail company report after adopting Agentic AI?", "answerable": true, "expected_pages": [12, 13]},
+    {"id": "a09", "question": "Why does an agent need long-term and short-term memory?", "answerable": true, "expected_pages": [22]},
+    {"id": "a10", "question": "Which communication mechanisms do agents in a multi-agent system use?", "answerable": true, "expected_pages": [40]},
+    {"id": "a11", "question": "What are the core pillars of an Agentic AI system?", "answerable": true, "expected_pages": [19]},
+    {"id": "u01", "question": "What is the capital of France?", "answerable": false, "expected_pages": []},
+    {"id": "u02", "question": "Who won the 2022 FIFA World Cup?", "answerable": false, "expected_pages": []},
+    {"id": "u03", "question": "How do I bake sourdough bread?", "answerable": false, "expected_pages": []},
+    {"id": "u04", "question": "How do I fine-tune Llama 3 with LoRA?", "answerable": false, "expected_pages": [], "near_miss": true},
+    {"id": "u05", "question": "How much does Konverge AI charge for its services?", "answerable": false, "expected_pages": [], "near_miss": true},
+    {"id": "u06", "question": "Explain how the transformer self-attention mechanism works.", "answerable": false, "expected_pages": [], "near_miss": true}
+  ]
+}
